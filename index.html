@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Media Tracker — Free Watch Time Tracker</title>
+  <meta name="description" content="Media Tracker helps you track video and stream watch time, plus supported music listening time, with clear stats right in your browser." />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Media Tracker</p>
+
+      <h1 id="hero-title">Free watch time tracking for your browser</h1>
+
+      <p class="lead">
+        Media Tracker helps you understand how much time you spend watching videos,
+        viewing streams, and listening to supported media in your browser.
+        Clear stats stay on your device.
+      </p>
+
+      <div class="actions" aria-label="Main actions">
+        <a class="button button-primary" href="#support">Support</a>
+        <a class="button button-secondary" href="./privacy.html">Privacy Policy</a>
+      </div>
+    </section>
+
+    <section class="cards" aria-label="Main features">
+      <article class="card">
+        <div class="icon" aria-hidden="true">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </div>
+        <h2>Watch time stats</h2>
+        <p>
+          Track time spent watching videos and streams, then view clean daily
+          and weekly statistics.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon icon-dot" aria-hidden="true"></div>
+        <h2>Supported media sites</h2>
+        <p>
+          Works with supported video, streaming, and music platforms in your browser.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon icon-lock" aria-hidden="true"></div>
+        <h2>Local first</h2>
+        <p>
+          No account, no cloud sync, no external analytics, and no remote tracking.
+        </p>
+      </article>
+    </section>
+
+    <section id="support" class="support" aria-labelledby="support-title">
+      <div>
+        <p class="eyebrow">Support</p>
+        <h2 id="support-title">Need help?</h2>
+        <p>
+          For support requests, questions, bug reports, or privacy-related messages,
+          contact the developer by email.
+        </p>
+      </div>
+
+      <a class="support-email" href="mailto:yaroslav.kukareko@proton.me">
+        yaroslav.kukareko@proton.me
+      </a>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Media Tracker</span>
+      <a href="./privacy.html">Privacy Policy</a>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
